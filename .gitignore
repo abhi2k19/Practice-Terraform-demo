@@ -1,0 +1,11 @@
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Crash logs
+crash.log
+
+# CLI credentials
+*.pem
+.terraform.lock.hcl
