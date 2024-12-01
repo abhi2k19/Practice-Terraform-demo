@@ -25,3 +25,24 @@ The advantage of using Terraform modules in your infrastructure as code (IaC) pr
 
 A module in Terraform is a container for multiple resources that are used together. 
 Modules are the primary way to organize, reuse, and manage your Terraform configurations efficiently. Essentially, a module is any set of .tf files in a directory.
+
+terraform-project/
+├── main.tf
+├── variables.tf
+├── common.tfvars   # Shared variables across all modules
+├── modules/
+│   ├── vpc/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │   ├── vpc.tfvars  # VPC-specific variables
+│   ├── ec2/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   ├── s3/
+│       ├── main.tf
+│       ├── variables.tf
+│       ├── outputs.tf
+│       ├── s3.tfvars  # S3-specific variables
+
