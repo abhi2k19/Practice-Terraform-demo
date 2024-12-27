@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "my-tf-mytest-s3bucket"
+    bucket = "abhi-s3-for-state"
     region = "us-east-1"
     key = "prod/terraform.tfstate"
     dynamodb_table = "my-db-state-lock"
